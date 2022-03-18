@@ -1,31 +1,76 @@
-.container {
-  padding: 0 2rem;
-}
-
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  position: relative;
+  /* padding: 1rem 0; */
+  /* flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   align-items: center;
+  background-image: url("../public/Header.png");
+  background-repeat: no-repeat;
+  background-position: 4rem -6rem;
+  background-size: 100rem 55rem;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.logo {
+  position: absolute;
+  width: 80vw;
+  height: 70vh;
+  top: -11rem;
+  left: 1rem;
+  /* border: 2px solid green; */
+  /* display: none; */
 }
 
-.footer a {
+.searchBox {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  border: 2px solid black;
+  width: 15rem;
+  border-radius: 15px;
+  padding: 0px 1rem;
+  justify-content: space-between;
+  position: absolute;
+  top: 4rem;
+  right: 20rem;
+  z-index: 1;
+}
+
+.inputBox {
+  border: none;
+}
+
+.inputBox:focus .searchBox {
+  background-color: var(--color1);
+}
+
+.aside {
+  position: absolute;
+  right: 27rem;
+  bottom: 45%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: var(--int);
+}
+
+.navBtn {
+  list-style: none;
+  text-align: center;
+  margin: 10px 0px;
+  padding: 15px;
+  color: #000000;
+  background: var(--color1);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 1s ease-in-out;
+}
+
+.navBtn:hover {
+  background: var(--color2);
 }
 
 .title a {
@@ -45,15 +90,18 @@
   font-size: 4rem;
 }
 
-.title,
-.description {
+.title {
   text-align: center;
 }
 
 .description {
-  margin: 4rem 0;
+  /* margin: 4rem 0; */
+  position: absolute;
+  font-family: var(--merie);
   line-height: 1.5;
   font-size: 1.5rem;
+  top: 10rem;
+  left: 10rem;
 }
 
 .code {
@@ -65,13 +113,14 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
+/* .grid {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-}
+  font-family: intr;
+} */
 
 .card {
   margin: 1rem;
@@ -103,10 +152,11 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.powered {
+  color: #000000;
 }
+
+
 
 @media (max-width: 600px) {
   .grid {

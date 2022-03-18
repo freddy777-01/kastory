@@ -1,0 +1,60 @@
+.main {
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    background-image: url("../assets/images/reader_writer-01.png");
+    background-repeat: no-repeat;
+    /* background-position: -5rem -9rem; */
+    background-size: 100%;
+    font-family: var(--int);
+}
+
+.section {
+    /* position: absolute; */
+    /* border: 2px solid red; */
+    padding: 3px;
+    width: 40rem;
+    margin: 8rem auto;
+    border-radius: var(--boxRadius);
+    box-shadow: var(--shadow);
+}
+
+.header {
+    text-align: center;
+}
+
+.inputBox {
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    width: 30rem;
+    margin: 30px auto;
+}
+
+.input {
+    margin: 3px 0px;
+    height: 3rem;
+    border-radius: 5px;
+    border: 2px solid #838383;
+}
+
+.input:focus {
+    background: var(--color2);
+}
+
+.btn {
+    width: auto;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    background: var(--color1);
+    border-radius: var(--boxRadius);
+    font-size: var(--fontSize);
+    transition: background 1s ease-in-out;
+    align-self: flex-end;
+}
+
+.btn:hover {
+    background: var(--color2);
+}

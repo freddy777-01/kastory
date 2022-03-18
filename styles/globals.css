@@ -6,6 +6,16 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+@font-face {
+  font-family: Merienda;
+  src: local('Merienda'), url('../assets/fonts/Merienda-Regular.ttf');
+}
+
+@font-face {
+  font-family: inter;
+  src: local('inter'), url('../assets/fonts/Inter-Regular.ttf');
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -14,3 +24,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --merie: Merienda;
+  --int: inter;
+  --color1: #D893D9;
+  --color2: #E4B3E4;
+  --boxRadius: 5px;
+  --fontSize: 20px;
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
